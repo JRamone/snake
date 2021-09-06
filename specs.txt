@@ -1,1 +1,34 @@
-ome specs here
+Specs and planning for awesome snake game:
+
+	Some grandlines:
+
+		Snake collects apples and gets bigger. 9 points per apple.
+		Apple will spawn on an empty location.
+		Game completed when screen is full of snake.
+		Every object on screen should be an instance of gameobject class or its descendant.
+	
+	About classes:
+			
+		Location is represented with 'coordinates' class.
+		Coordinate:
+			constructor(x, y)
+			set(x,y)
+			get() -> x,y
+		
+		Gameobject:
+			constructor(coordinate)
+			moving(x,y):
+			destroy()
+			subclasses:
+				wall
+				apple
+				snakehead
+					check_collision(other)	
+				snakebody
+
+		Game_engine:
+			add_points()
+			reset_points()
+			reset_game()
+
+		Some thinking? - Done. Enough? - No.
